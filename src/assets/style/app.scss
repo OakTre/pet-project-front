@@ -1,0 +1,49 @@
+@import "_reset";
+@import "_fonts";
+@import "_variables";
+@import "_settings.scss";
+
+*, html {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+body {
+    font: var(--font-body);
+    color: var(--color-black);
+    background-color: var(--color-light-grey);
+}
+
+.main {
+    flex-grow: 1;
+    padding-top: var(--offset-32);
+    padding-bottom: var(--offset-32);
+}
+
+.ui-icon {
+    flex-shrink: 0;
+    user-select: none;
+    fill: none;
+    stroke: none;
+    transition: fill var(--transition), stroke var(--transition);
+}
+
+.app-container {
+    width: 100%;
+    max-width: calc(var(--conatainer) + var(--offset-40) * 2);
+    margin: 0 auto;
+    padding: 0 var(--offset-40);
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main {
+    flex-grow: 1;
+}

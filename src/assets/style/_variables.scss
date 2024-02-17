@@ -1,0 +1,73 @@
+:root {
+    --ff: Mont;
+    --font-24-32-bold: 700 2.4rem/3.2rem var(--ff);
+    --font-24-32-semibold: 700 2.4rem/3.2rem var(--ff);
+    --font-20-24-semibold: 700 2rem/2.4rem var(--ff);
+    --font-20-24-regular: 600 2rem/2.4rem var(--ff);
+    --font-16-24-semibold: 700 1.6rem/2.4rem var(--ff);
+    --font-16-24-regular: 600 1.6rem/2.4rem var(--ff);
+    --font-14-20-semibold: 700 1.4rem/2rem var(--ff);
+    --font-14-20-regular: 600 1.4rem/2rem var(--ff);
+    --font-12-16-regular: 600 1.2rem/1.6rem var(--ff);
+    --font-body: var(--font-14-20-regular);
+
+    --color-white: #fff;
+    --color-white-alpha-80: rgba(255, 255, 255, 80%);
+    --color-light-grey: #F5F5F5;
+    --color-grey: #E6E6E6;
+    --color-dark-grey: #DADADA;
+    --color-silver: #99A2AD;
+    --color-darker-grey: #717070;
+    --color-black: #000000;
+    --color-blue: #7237ec;
+    --color-red: #FF1216;
+    --color-green: #00DA3D;
+
+    --color-btn-hover: #9869FA;
+    --color-btn-active: #44208E;
+
+    --color-btn-second-hover: #D2D2D2;
+    --color-btn-second-active: #979797;
+
+    --color-checkbox-checked: #5b32b2;
+
+    --offset-100: 10rem;
+    --offset-80: 8rem;
+    --offset-60: 6rem;
+    --offset-48: 4.8rem;
+    --offset-40: 4rem;
+    --offset-32: 3.2rem;
+    --offset-24: 2.4rem;
+    --offset-20: 2rem;
+    --offset-16: 1.6rem;
+    --offset-12: 1.2rem;
+    --offset-8: 0.8rem;
+    --offset-4: 0.4rem;
+
+    --transition: 0.1s;
+    --conatainer: 128rem;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
